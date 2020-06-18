@@ -1,0 +1,121 @@
+.content_story{
+    width: 80%;
+    height: 800px;
+    margin: auto;
+    border-radius: 10px;
+    background-image: url(../img/montanhas3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid white;
+    border: 2px solid black;
+}
+.content_story2{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+.titulo {
+    padding-top: 100px;
+    text-align: center;
+}
+.titulo h1{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg,	#7FFFD4,transparent);
+}
+
+.org_img{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.org_img a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(7, 7, 7);
+    background-image: linear-gradient(45deg,	#7FFFD4,transparent);
+    border-radius: 10px;
+}
+.img1 {
+    background-image: url(../img/rapel1.jpg);
+    border: 3px solid white;
+}
+.img2 {
+    background-image: url(../img/downhill.jfif);
+    background-size: cover;
+    border: 3px solid white;
+}
+.img3 {
+    background-image: url(../img/escalada.jpg);
+    background-size: cover;
+    border: 3px solid white;
+}
+.corpo {
+    width: 100%;
+    height: 3000px;
+}
+.assunto1 {
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    background-image: url(../img/rapel2.0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid white;
+    border: 2px solid black;
+}
+.assunto2 {
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    background-image: url(../img/downhill2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid white;
+    border: 2px solid black;
+}
+.assunto3 {
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    background-image: url(../img/escalada2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid white;
+    border: 2px solid black;
+}
+.img_assunto1 {
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+}
+.texto_assunto {
+    width: 300px;
+    height: 200px;
+    margin-left: 100px;
+    background-color: #00000071;
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 10px;
+    text-align: left;
+}
