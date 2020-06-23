@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Aventuras</h1>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="registrar.html">Registrar</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="main-cadastro">
+        <h1 class="teste">Login</h1>
+
+        <form id="form_login" method="post" onsubmit="return entrar()">
+            <label for="usuario"> Usuario:</label>
+            <input type="text" class="input-padrao" placeholder="Login" id="login" name="login" required>
+            <label for="senha"> Senha:</label>
+            <input type="password" class="input-padrao" placeholder="Senha" id="senha1" name="senha" required>
+
+            <input type="submit" class="input-padrao btn" id="bnt_entrar">
+            <div id="div_erro" style=" color: red; display: none;"></div>
+
+        </form>
+
+    </div>
+    <footer class="rod">
+        <div class="my">
+            <p class="dados">Felipe Moraes Kling<br>
+                29 anos<br>
+                Cursando Analise e desenvolvimento de sistemas<br>
+                Bandtec<br>
+                1ADSA</p>
+        </div>
+        <ul>
+            <span class="redes">Redes sociais:</span>
+            <li><a href="https://www.facebook.com/felipe.kling"><img src="redesSociais/facebook.png" alt=""
+                        width="40px"></a></li>
+            <li><a href="https://www.instagram.com/fekling/?hl=pt-br"><img src="redesSociais/instagram.png" alt=""
+                        width="40px"></a></li>
+        </ul>
+    </footer>
+</body>
+</head>
+
+</html>
+<script>
+    function entrar() {
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'index2.html';
+                    alert ('Bem vindo');
+                });
+
+            } else {
+
+
+                console.log('Erro de login!');
+
+                alert ('Usuário ou Senha inválidos');
+                login.value = "";
+                senha1.value = "";
+            }
+        });
+
+        return false;
+
+    }
+</script>

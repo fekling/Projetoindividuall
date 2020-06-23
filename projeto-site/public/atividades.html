@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lugares</title>
+    <title>Atividade</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/places.css">
+    <link rel="stylesheet" href="styles/story.css">
+    <script type="text/javascript" src="funcoes.js"></script>
 </head>
 
 <body>
@@ -17,11 +18,11 @@
         <header>
             <h1>Aventuras</h1>
             <ul>
-                <li><a href="index.html">Início</a></li>
+                <li><a href="index2.html">Início</a></li>
                 <li><a href="atividades.html">Atividades</a></li>
                 <li><a href="lugares.html">Melhores Lugares</a></li>
-                <li><a href="registrar.html">Registrar</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="#">Usuario:<b id="b_usuario"></b></a></li>
+                <li><a href="#" onclick="logoff()">Sair</a></li>
             </ul>
         </header>
     </div>
@@ -29,37 +30,37 @@
     <div class="content_story">
         <div class="titulo"><h1>Escolha uma atividade</h1></div>
         <div class="org_img">
-            <a href="#assunto1">Boca da Onça<div class="content_story2 img1"></div></a>
-            <a href="#assunto2"><div class="content_story2 img2"></div></a>
-            <a href="#assunto3"><div class="content_story2 img3"></div></a>
+            <a href="#assunto1">Rapel<div class="content_story2 img1"></div></a>
+            <a href="#assunto2">Downhill<div class="content_story2 img2"></div></a>
+            <a href="#assunto3">Montanhismo<div class="content_story2 img3"></div></a>
         </div>
     </div>
     <div class="assunto1" id="assunto1">
         <div class="img_assunto1"></div>
-        <div class="texto_assunto">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Alias atque magni hic, autem nesciunt dolor explicabo maxime
-            consequuntur laboriosam a! Facilis cupiditate assumenda corporis
-            culpa! Dolorum voluptatibus et modi? Maxime?
+        <div class="texto_assunto"><br>
+            Rapel é uma atividade vertical praticada com uso de cordas e equipamentos 
+            adequados para a descida de paredões e vãos livres bem como outras edificações. 
+            Trata-se de uma atividade criada a partir das técnicas do alpinismo.
+            Pode ser praticados em cachoeiras, encostas e pontes.
+            (sempre pratique com acompanhamento profissional)
         </div>
     </div>
     <div class="assunto2" id="assunto2">
         <div class="img_assunto2"></div>
-        <div class="texto_assunto">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Alias atque magni hic, autem nesciunt dolor explicabo maxime
-            consequuntur laboriosam a! Facilis cupiditate assumenda corporis
-            culpa! Dolorum voluptatibus et modi? Maxime?
+        <div class="texto_assunto"><br>
+            Downhill é uma forma do ciclismo que consiste em descer o mais rapidamente possível um dado percurso. 
+            Uma modalidade do mountain bike nascida na Califórnia na segunda metade da década de 1970.
+            (recomenda-se uso de equipamentos de segurança para prática)
         </div>
     </div>
     <div class="assunto3" id="assunto3">
         <div class="img_assunto3"></div>
-        <div class="texto_assunto">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Alias atque magni hic, autem nesciunt dolor explicabo maxime
-            consequuntur laboriosam a! Facilis cupiditate assumenda corporis
-            culpa! Dolorum voluptatibus et modi? Maxime?
+        <div class="texto_assunto"><br>
+            Montanhismo é como se chama a prática de aventura para subir em ambientes naturais, as montanhas.
+            Este esporte é feito em paredes geladas ou não, por meio de caminhadas ou escaladas.
+            (sempre pratique com acompanhamento profissional)
         </div>
+    </div>
     </div>
     <footer class="rod">
         <div class="my"><p class="dados">Felipe Moraes Kling<br>
@@ -79,3 +80,6 @@
 </body>
 
 </html>
+<script>
+    verificar_autenticacao();
+</script>

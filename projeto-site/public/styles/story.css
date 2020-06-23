@@ -72,6 +72,7 @@
     justify-content: space-between;
     border-bottom: 3px solid white;
     border: 2px solid black;
+    color: #ffff;
 }
 .assunto2 {
     width: 80%;
@@ -88,6 +89,7 @@
     justify-content: space-between;
     border-bottom: 3px solid white;
     border: 2px solid black;
+    color: #ffff;
 }
 .assunto3 {
     width: 80%;
@@ -104,6 +106,7 @@
     justify-content: space-between;
     border-bottom: 3px solid white;
     border: 2px solid black;
+    color: #ffff;
 }
 .img_assunto1 {
     width: 500px;
@@ -117,5 +120,5 @@
     background-color: #00000071;
     border: 2px solid rgb(10, 10, 10);
     border-radius: 10px;
-    text-align: left;
+    text-align: center;
 }
