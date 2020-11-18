@@ -8,10 +8,10 @@ module.exports = {
     storage: ":memory:"
   },
   production: {
-    username: 'fekling',
-    password: 'Felipe18',
-    database: 'projetoindividual',
-    host: 'felipekling.database.windows.net',
+    username: 'Luis',
+    password: '#Gf123456789',
+    database: 'BD_Usuarios',
+    host: 'bd-site.database.windows.net',
     dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {
@@ -28,4 +28,5 @@ module.exports = {
     }
   }
 };
+
  
